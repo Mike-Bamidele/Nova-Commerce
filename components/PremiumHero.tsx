@@ -84,7 +84,7 @@ function FloatingCard({ product, className = "", large = false }: FloatingCardPr
           group ${large ? "w-44 lg:w-52" : "w-full"}
           rounded-[24px] border border-white/60 bg-white/95 p-2.5
           shadow-[0_20px_50px_rgba(15,23,42,0.14)]
-          backdrop-blur-sm transition-shadow duration-300
+          transition-shadow duration-300
           hover:shadow-[0_30px_70px_rgba(15,23,42,0.2)]
           dark:border-white/10 dark:bg-slate-900/95 dark:shadow-[0_20px_50px_rgba(0,0,0,0.4)]
           dark:hover:shadow-[0_30px_70px_rgba(0,0,0,0.55)]

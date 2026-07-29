@@ -99,7 +99,7 @@ export default function HeroSpotlight({ products, interval = 4500 }: HeroSpotlig
               }}
               className="
                 flex h-7 w-7 cursor-pointer items-center justify-center rounded-full
-                bg-slate-100 text-slate-700 transition-all duration-300
+                bg-slate-100 text-slate-700 transition-colors duration-300
                 hover:bg-slate-900 hover:text-white
                 dark:bg-white/10 dark:text-slate-200 dark:hover:bg-white dark:hover:text-slate-900
               "
@@ -117,7 +117,7 @@ export default function HeroSpotlight({ products, interval = 4500 }: HeroSpotlig
           <button
             key={i}
             onClick={() => setIndex(i)}
-            className={`h-1.5 cursor-pointer rounded-full transition-all duration-300 ${
+            className={`h-1.5 cursor-pointer rounded-full transition-colors duration-300 ${
               i === index ? "w-4 bg-slate-900 dark:bg-white" : "w-1.5 bg-slate-300 dark:bg-white/20"
             }`}
             aria-label={`Show product ${i + 1}`}

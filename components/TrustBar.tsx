@@ -49,7 +49,7 @@ export default function TrustBar() {
           return (
             <div
               key={item.title}
-              className="group relative overflow-hidden rounded-[28px] border border-white/70 bg-white/70 p-7 shadow-[0_20px_60px_rgba(15,23,42,0.06)] backdrop-blur-sm transition-transform duration-500 hover:-translate-y-2 dark:border-white/10 dark:bg-white/[0.03] dark:shadow-[0_20px_60px_rgba(0,0,0,0.3)]"
+              className="group relative overflow-hidden rounded-[28px] border border-white/70 bg-white/95 p-7 shadow-[0_20px_60px_rgba(15,23,42,0.06)] transition-transform duration-500 hover:-translate-y-2 dark:border-white/10 dark:bg-slate-900/80 dark:shadow-[0_20px_60px_rgba(0,0,0,0.3)]"
             >
               <div
                 className={`absolute inset-0 bg-gradient-to-br opacity-0 transition-opacity duration-500 group-hover:opacity-100 dark:opacity-0 dark:group-hover:opacity-60 ${item.accent}`}
