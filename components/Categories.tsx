@@ -1,6 +1,32 @@
+"use client";
+
 import Badge from "./Badge";
 import CategoryCard from "./CategoryCard";
 import Section from "./Section";
+import { products } from "@/data/products";
+
+const categories = [
+  {
+    image: "/images/categories/fashion.jpg",
+    title: "Fashion",
+    description: "Modern clothing and everyday essentials.",
+  },
+  {
+    image: "/images/categories/productivity.jpg",
+    title: "Productivity",
+    description: "Tools that help you do your best work.",
+  },
+  {
+    image: "/images/categories/wellness.jpg",
+    title: "Wellness",
+    description: "Health products for body and mind.",
+  },
+  {
+    image: "/images/categories/tech.jpg",
+    title: "Tech",
+    description: "Smart accessories built for modern life.",
+  },
+];
 
 export default function Categories() {
   return (
@@ -19,29 +45,16 @@ export default function Categories() {
       </div>
 
       <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
-        <CategoryCard
-          emoji="👕"
-          title="Fashion"
-          description="Modern clothing and everyday essentials."
-        />
-
-        <CategoryCard
-          emoji="💻"
-          title="Productivity"
-          description="Tools that help you do your best work."
-        />
-
-        <CategoryCard
-          emoji="🌿"
-          title="Wellness"
-          description="Health products for body and mind."
-        />
-
-        <CategoryCard
-          emoji="🎧"
-          title="Tech"
-          description="Smart accessories built for modern life."
-        />
+        {categories.map((category, index) => (
+          <CategoryCard
+            key={category.title}
+            image={category.image}
+            title={category.title}
+            description={category.description}
+            count={products.filter((p) => p.category === category.title).length}
+            index={index}
+          />
+        ))}
       </div>
     </Section>
   );

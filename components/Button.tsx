@@ -1,22 +1,38 @@
-type ButtonProps = {
-  children: React.ReactNode;
-  variant?: "primary" | "secondary";
+"use client";
+
+import { useRouter } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
+
+type BackButtonProps = {
+  label?: string;
+  fallbackHref?: string;
 };
 
-export default function Button({
-  children,
-  variant = "primary",
-}: ButtonProps) {
-  const styles =
-    variant === "primary"
-      ? "bg-slate-900 text-white hover:bg-slate-700"
-      : "border border-slate-300 text-slate-900 hover:bg-slate-100";
+export default function BackButton({ label = "Back to Home", fallbackHref = "/" }: BackButtonProps) {
+  const router = useRouter();
+
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      router.back();
+    } else {
+      router.push(fallbackHref);
+    }
+  };
 
   return (
     <button
-      className={`rounded-full px-8 py-4 font-medium transition duration-300 ${styles}`}
+      onClick={handleBack}
+      className="
+        mb-8 inline-flex cursor-pointer items-center gap-2 rounded-full
+        border border-slate-200 bg-white px-5 py-3 text-sm font-medium
+        text-slate-700 transition-all duration-300
+        hover:-translate-x-1 hover:border-slate-900 hover:text-slate-900
+        dark:border-white/10 dark:bg-white/[0.03]
+        dark:text-slate-300 dark:hover:border-white dark:hover:text-white
+      "
     >
-      {children}
+      <ArrowLeft size={16} />
+      {label}
     </button>
   );
 }
