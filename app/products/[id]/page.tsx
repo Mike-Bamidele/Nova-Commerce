@@ -8,6 +8,10 @@ import RelatedProducts from "@/components/RelatedProducts";
 import BackButton from "@/components/BackButton";
 import ShippingEstimate from "@/components/ShippingEstimate";
 import LocalPrice from "@/components/LocalPrice";
+import StockBadge from "@/components/StockBadge";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import TrackProductView from "@/components/TrackProductView";
+import RecentlyViewedSection from "@/components/RecentlyViewedSection";
 
 type ProductPageProps = {
   params: Promise<{
@@ -68,8 +72,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
       />
 
       <div className="mb-10">
-        <BackButton label="Back to Products" fallbackHref="/shop" />
-      </div>
+  <BackButton label="Back to Products" fallbackHref="/shop" />
+</div>
+
+<Breadcrumbs
+  items={[
+    { label: "Shop", href: "/shop" },
+    { label: product.category, href: `/shop?category=${product.category}` },
+    { label: product.name },
+  ]}
+/>
 
       <div className="grid gap-14 lg:grid-cols-2">
         <ProductGallery name={product.name} images={product.images ?? [product.image]} />
@@ -104,6 +116,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
 
           <LocalPrice usdPrice={product.price} />
+          <LocalPrice usdPrice={product.price} />
+<div className="mt-3">
+  <StockBadge stock={product.stock} />
+</div>
 
           {product.colors && product.colors.length > 0 && (
             <div className="mt-6">
@@ -141,6 +157,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
       />
 
       <RelatedProducts currentProductId={product.id} category={product.category} />
+      <RelatedProducts currentProductId={product.id} category={product.category} />
+<RecentlyViewedSection excludeId={product.id} />
+      <TrackProductView productId={product.id} />
     </main>
   );
 }

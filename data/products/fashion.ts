@@ -430,6 +430,7 @@ export const fashionProducts: Product[] = [
     comparePrice: 54.99,
     image: "/images/products/fashion/linen-shirt-02.JPG",
     images: [
+      "images/products/fashion/linen-shirt-02.JPG",
       "/images/products/fashion/linen-shirt-01.JPG"
     ],
     description:
@@ -544,7 +545,7 @@ export const fashionProducts: Product[] = [
     tags: ["polo", "smart casual", "summer", "minimal"],
     price: 22999,
     comparePrice: 27999,
-    image: "/images/products/fashion/linen-shirt-01.JPG.JPG",
+    image: "/images/products/fashion/linen-shirt-01.JPG",
     images: [
       "/images/products/fashion/polo-shirt-1.JPG",
       "/images/products/fashion/polo-shirt-3.JPG"

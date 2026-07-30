@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useCart } from "@/context/CartContext";
 import CartItem from "./CartItem";
 import { useState } from "react";
+import FocusTrap from "focus-trap-react";
 
 type CartDrawerProps = {
   open: boolean;
@@ -55,8 +56,8 @@ const handleCheckout = async () => {
             transition={{ duration: 0.2 }}
             className="fixed inset-0 z-[90] bg-black/40"
           />
-
-          <motion.aside
+          <FocusTrap active={open}>
+  <motion.aside
             key="drawer"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
@@ -168,7 +169,7 @@ const handleCheckout = async () => {
   </span>
 </button>
 
-                <button
+                                <button
                   onClick={onClose}
                   className="mt-3 w-full cursor-pointer rounded-2xl border border-slate-200 py-3.5 font-medium text-slate-700 transition hover:bg-slate-100 dark:border-white/10 dark:text-slate-300 dark:hover:bg-white/10"
                 >
@@ -177,8 +178,9 @@ const handleCheckout = async () => {
               </div>
             )}
           </motion.aside>
-        </>
-      )}
-    </AnimatePresence>
-  );
+        </FocusTrap>
+      </>
+    )}
+  </AnimatePresence>
+);
 }

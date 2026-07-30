@@ -9,6 +9,7 @@ import { LocaleProvider } from "@/context/LocaleContext";
 import Footer from "@/components/Footer";
 import WelcomeOfferModal from "@/components/WelcomeOfferModal";
 import { ToastProvider } from "@/context/ToastContext";
+import { RecentlyViewedProvider } from "@/context/RecentlyViewedContext";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -41,6 +42,13 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
+  <a
+    href="#main-content"
+    className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[300] focus:rounded-full focus:bg-slate-900 focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-white"
+  >
+    Skip to content
+  </a>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -55,20 +63,24 @@ export default function RootLayout({
         />
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-  <ToastProvider>
-    <AuthProvider>
-      <LocaleProvider>
-        <WishlistProvider>
-          <CartProvider>
-            <div className="flex-1">{children}</div>
-            <Footer />
-            <WelcomeOfferModal />
-          </CartProvider>
-        </WishlistProvider>
-      </LocaleProvider>
-    </AuthProvider>
-  </ToastProvider>
-</ThemeProvider>
+          <ToastProvider>
+            <AuthProvider>
+              <LocaleProvider>
+                <WishlistProvider>
+                  <CartProvider>
+                    <RecentlyViewedProvider>
+                      <div id="main-content" className="flex-1">
+                        {children}
+                      </div>
+                      <Footer />
+                      <WelcomeOfferModal />
+                    </RecentlyViewedProvider>
+                  </CartProvider>
+                </WishlistProvider>
+              </LocaleProvider>
+            </AuthProvider>
+          </ToastProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
