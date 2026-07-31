@@ -232,7 +232,6 @@ export const fashionProducts: Product[] = [
       "/images/products/fashion/black-hoodie-01.JPG",
       "/images/products/fashion/black-hoodie-02.JPG",
       "/images/products/fashion/black-hoodie-03.JPG",
-      "/images/products/fashion/black-hoodie-04.JPG",
       "/images/products/fashion/black-hoodie-05.JPG"
     ],
     description:
@@ -347,9 +346,8 @@ export const fashionProducts: Product[] = [
     comparePrice: 45.99,
     image: "/images/products/fashion/crew-neck sweatshirt-03.JPG",
     images: [
-      "/images/products/fashion/crew-neck sweatshirt-01.JPG",
-      "/images/products/fashion/crew-neck sweatshirt-02.JPG",
-      "/images/products/fashion/crew-neck sweatshirt-04.JPG"
+      "/images/products/fashion/crew-neck sweatshirt-04.JPG",
+      "/images/products/fashion/crew-neck sweatshirt-05.JPG"
       
     ],
     description:
@@ -376,49 +374,6 @@ export const fashionProducts: Product[] = [
   },
 
   {
-    id: 48,
-    slug: "executive-laptop-briefcase-black",
-    name: "Executive Laptop Briefcase",
-    category: "Productivity",
-    brand: "TechPro",
-    collection: "Executive Series",
-    tags: ["laptop", "office", "briefcase", "travel"],
-    price: 54.99,
-    comparePrice: 69.99,
-    image: "/images/products/fashion/laptop-backpack-01.JPG",
-    images: [
-      "/images/products/fashion/laptop-backpack-02.JPG",
-      "/images/products/fashion/laptop-backpack-03.JPG",
-      "/images/products/fashion/laptop-backpack-04.JPG",
-      "/images/products/fashion/laptop-backpack-05.JPG",
-      "/images/products/fashion/laptop-backpack-06.JPG"
-      
-    ],
-    description:
-      "Professional laptop briefcase with padded compartments for work, travel, and daily commuting.",
-    features: [
-      "Fits up to 15.6-inch laptop",
-      "Water-resistant fabric",
-      "Adjustable shoulder strap",
-      "Multiple storage compartments",
-      "Shockproof interior"
-    ],
-    specifications: {
-      material: "Water-resistant Polyester",
-      dimensions: "40 × 30 × 8 cm",
-      compatibility: "Up to 15.6-inch laptops",
-      warranty: "1 Year"
-    },
-    colors: ["Black"],
-    stock: 34,
-    rating: 4.9,
-    reviews: 165,
-    badge: "Best Seller",
-    featured: true,
-    bestSeller: true
-  },
-
-  {
     id: 49,
     slug: "linen-button-shirt-light-blue",
     name: "Light Blue Linen Shirt",
@@ -430,7 +385,7 @@ export const fashionProducts: Product[] = [
     comparePrice: 54.99,
     image: "/images/products/fashion/linen-shirt-02.JPG",
     images: [
-      "images/products/fashion/linen-shirt-02.JPG",
+      "/images/products/fashion/linen-shirt-02.JPG",
       "/images/products/fashion/linen-shirt-01.JPG"
     ],
     description:
@@ -469,10 +424,10 @@ export const fashionProducts: Product[] = [
     comparePrice: 24999,
     image: "/images/products/fashion/minimal- sandals-01.JPG",
     images: [
-      "/images/products/fashion/minimal- sandals-02.JPG",
-      "/images/products/fashion/minimal- sandals-03.JPG",
-      "/images/products/fashion/minimal- sandals-04.JPG",
-      "/images/products/fashion/minimal- sandals-05.JPG"
+      "/images/products/fashion/minimal-sandals-02.JPG",
+      "/images/products/fashion/minimal-sandals-03.JPG",
+      "/images/products/fashion/minimal-sandals-04.JPG",
+      "/images/products/fashion/minimal-sandals-05.JPG"
     ],
     description:
       "Minimal cross-strap flat slides designed for effortless everyday comfort. Lightweight with a cushioned footbed and clean contemporary styling.",
@@ -545,10 +500,10 @@ export const fashionProducts: Product[] = [
     tags: ["polo", "smart casual", "summer", "minimal"],
     price: 22999,
     comparePrice: 27999,
-    image: "/images/products/fashion/linen-shirt-01.JPG",
+    image: "/images/products/fashion/polo-shirt-01.JPG",
     images: [
-      "/images/products/fashion/polo-shirt-1.JPG",
-      "/images/products/fashion/polo-shirt-3.JPG"
+      "/images/products/fashion/polo-shirt-02.JPG",
+      "/images/products/fashion/polo-shirt-04.JPG"
     ],
     description:
       "Premium knit polo featuring subtle vertical stripes and a soft breathable fabric for refined everyday styling.",
@@ -580,9 +535,7 @@ export const fashionProducts: Product[] = [
     comparePrice: 31999,
     image: "/images/products/fashion/polo-shirt-10.JPG",
     images: [
-      "/images/products/fashion/polo-shirt-2.JPG",
-      "/images/products/fashion/polo-shirt-4.JPG",
-      "/images/products/fashion/polo-shirt-11.JPG",
+      "/images/products/fashion/polo-shirt-10.JPG",
       "/images/products/fashion/polo-shirt-12.JPG",
       "/images/products/fashion/polo-shirt-13.JPG",
     ],
@@ -721,10 +674,9 @@ export const fashionProducts: Product[] = [
 
   image: "/images/products/fashion/white-tshirt-01.JPG",
   images: [
-      "/images/products/fashion/white-tshirt-02.JPG",
+      "/images/products/fashion/white-tshirt-01.JPG",
       "/images/products/fashion/white-tshirt-03.JPG",
       "/images/products/fashion/white-tshirt-04.JPG",
-      "/images/products/fashion/white-tshirt-05.JPG",
       "/images/products/fashion/white-tshirt-06.JPG",
     ],
 

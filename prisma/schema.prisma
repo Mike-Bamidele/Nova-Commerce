@@ -58,3 +58,33 @@ model VerificationToken {
   @@unique([identifier, token])
   @@map("verification_tokens")
 }
+
+model Order {
+  id              String      @id @default(cuid())
+  userId          String?     @map("user_id")
+  stripeSessionId String      @unique @map("stripe_session_id")
+  email           String
+  total           Float
+  currency        String      @default("usd")
+  status          String      @default("paid")
+  createdAt       DateTime    @default(now()) @map("created_at")
+
+  user            User?       @relation(fields: [userId], references: [id], onDelete: SetNull)
+  items           OrderItem[]
+
+  @@map("orders")
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String  @map("order_id")
+  productId Int     @map("product_id")
+  name      String
+  image     String
+  price     Float
+  quantity  Int
+
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@map("order_items")
+}

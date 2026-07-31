@@ -116,7 +116,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
 
           <LocalPrice usdPrice={product.price} />
-          <LocalPrice usdPrice={product.price} />
 <div className="mt-3">
   <StockBadge stock={product.stock} />
 </div>
@@ -156,7 +155,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
         specifications={product.specifications}
       />
 
-      <RelatedProducts currentProductId={product.id} category={product.category} />
       <RelatedProducts currentProductId={product.id} category={product.category} />
 <RecentlyViewedSection excludeId={product.id} />
       <TrackProductView productId={product.id} />

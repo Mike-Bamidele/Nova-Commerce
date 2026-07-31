@@ -24,13 +24,13 @@ const trustBadges = [
 const heroProductIds = {
   featured: 1,
   floating: [
-    { id: 7, position: "-top-4 -right-6 lg:-right-10", size: "w-28 lg:w-32" },
-    { id: 14, position: "-bottom-2 -left-6 lg:-left-10", size: "w-28 lg:w-32" },
-    { id: 25, position: "-bottom-8 -right-2 lg:-right-6", size: "w-28 lg:w-32" },
-  ],
+  { id: 7, position: "top-0 right-0 lg:-top-4 lg:-right-6 lg:-right-10", size: "w-28 lg:w-32" },
+  { id: 24, position: "bottom-0 left-0 lg:-bottom-2 lg:-left-6 lg:-left-10", size: "w-28 lg:w-32" },
+  { id: 18, position: "bottom-0 right-0 lg:-bottom-8 lg:-right-2 lg:-right-6", size: "w-28 lg:w-32" },
+],
 };
 
-const spotlightIds = [1, 6, 9, 20];
+const spotlightIds = [12, 50, 9, 33, 13, 14, 10, 1, 7, 3, 21, 55, 32, 4, 8, 35, 40];
 
 const featuredProduct = products.find((p) => p.id === heroProductIds.featured);
 const heroProduct = featuredProduct ?? products[0];
@@ -238,7 +238,7 @@ export default function PremiumHero() {
           </div>
 
           {/* RIGHT SIDE */}
-          <motion.div variants={fadeUp} className="relative mx-auto -mt-35 aspect-square w-full max-w-lg">
+          <motion.div variants={fadeUp} className="relative mx-auto mt-16 aspect-square w-full max-w-lg lg:-mt-35">
             <div className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2">
               <HeroSpotlight products={spotlightProducts} />
             </div>

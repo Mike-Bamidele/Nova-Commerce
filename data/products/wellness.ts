@@ -174,15 +174,15 @@ export const wellnessProducts: Product[] = [
 
   comparePrice: 34,
 
-  image: "/images/products/wellness/Premium-08.JPG",
+  image: "/images/products/wellness/Premium-06.JPG",
 
   images: [
-   "/images/products/wellness//Premium-01.JPG",
-    "/images/products/wellness//Premium-06.JPG",
-    "/images/products/wellness//Premium-03.JPG",
-    "/images/products/wellness//Premium-04.JPG",
-    "/images/products/wellness//Premium-05.JPG",
-    "/images/products/wellness//Premium-07.JPG"
+   "/images/products/wellness/Premium-01.JPG",
+    "/images/products/wellness/Premium-06.JPG",
+    "/images/products/wellness/Premium-03.JPG",
+    "/images/products/wellness/Premium-08.JPG",
+    "/images/products/wellness/Premium-05.JPG",
+    "/images/products/wellness/Premium-07.JPG"
     
   ],
 
@@ -360,7 +360,8 @@ export const wellnessProducts: Product[] = [
   image: "/images/products/wellness/Fitness-Band-1.JPG",
 
   images: [
-    "/images/products/wellness/Fitness-Band-2.JPG",
+    "/images/products/wellness/Fitness-Band-1.JPG",
+    "/images/products/wellness/Fitness-Band-2.JPG"
   ],
 
   description:
@@ -721,7 +722,7 @@ export const wellnessProducts: Product[] = [
   image: "/images/products/wellness/houlder-Massager-1.JPG",
 
   images: [
-   "/imags/products/wellness/houlder-Massager-2.JPG"
+    "/images/products/wellness/houlder-Massager-1.JPG"
    
   ],
 

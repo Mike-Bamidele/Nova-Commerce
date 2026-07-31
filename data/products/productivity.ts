@@ -54,6 +54,47 @@ export const productivityProducts: Product[] = [
   featured: true,
 },
 
+{
+    id: 48,
+    slug: "executive-laptop-briefcase-black",
+    name: "Executive Laptop Briefcase",
+    category: "Productivity",
+    brand: "TechPro",
+    collection: "Executive Series",
+    tags: ["laptop", "office", "briefcase", "travel"],
+    price: 54.99,
+    comparePrice: 69.99,
+    image: "/images/products/productivity/laptop-backpack-01.JPG",
+    images: [
+      "/images/products/productivity/laptop-backpack-02.JPG",
+      "/images/products/productivity/laptop-backpack-05.JPG",
+      "/images/products/productivity/laptop-backpack-06.JPG"
+      
+    ],
+    description:
+      "Professional laptop briefcase with padded compartments for work, travel, and daily commuting.",
+    features: [
+      "Fits up to 15.6-inch laptop",
+      "Water-resistant fabric",
+      "Adjustable shoulder strap",
+      "Multiple storage compartments",
+      "Shockproof interior"
+    ],
+    specifications: {
+      material: "Water-resistant Polyester",
+      dimensions: "40 × 30 × 8 cm",
+      compatibility: "Up to 15.6-inch laptops",
+      warranty: "1 Year"
+    },
+    colors: ["Black"],
+    stock: 34,
+    rating: 4.9,
+    reviews: 165,
+    badge: "Best Seller",
+    featured: true,
+    bestSeller: true
+  },
+
   {
   id: 5,
   name: "Executive Ergonomic Leather Office Chair",
@@ -357,13 +398,13 @@ export const productivityProducts: Product[] = [
 
   comparePrice: 55,
 
-  image: "/images/products/tech/Architect Desk-3.JPG",
+  image: "/images/products/productivity/Architect Desk-3.JPG",
 
   images: [
-    "/images/products/tech/Architect Desk-1.JPG",
-    "/images/products/tech/Architect Desk-2.JPG",
-    "/images/products/tech/Architect Desk-5.JPG",
-    "/images/products/tech/Architect Desk-4.JPG"
+    "/images/products/productivity/Architect Desk-1.JPG",
+    "/images/products/productivity/Architect Desk-2.JPG",
+    "/images/products/productivity/Architect Desk-5.JPG",
+    "/images/products/productivity/Architect Desk-4.JPG"
   ],
 
   description:
@@ -414,6 +455,94 @@ export const productivityProducts: Product[] = [
   featured: true,
 
   newArrival: false,
+
+  bestSeller: true
+},
+
+{
+  id: 33,
+
+  slug: "mini-wireless-lightning-lavalier-microphone",
+
+  name: "Mini Wireless Lightning Lavalier Microphone",
+
+  category: "Productivity",
+
+  brand: "Generic",
+
+  collection: "Mobile Creator",
+
+  tags: [
+    "Wireless Microphone",
+    "Lightning",
+    "iPhone",
+    "Creator",
+    "Vlogging",
+    "Podcast",
+    "Recording",
+    "TikTok",
+    "YouTube",
+    "Interview"
+  ],
+
+  price: 24,
+
+  comparePrice: 39,
+
+  image: "/images/products/productivity/Lavalier Microphone-1.JPG",
+
+  images: [
+    "/images/products/productivity/Lavalier Microphone-1.JPG"
+  ],
+
+  description:
+    "Designed specifically for iPhone users, this ultra-compact wireless lavalier microphone provides exceptional voice clarity for vlogs, interviews, livestreams, podcasts, and social media content. Its lightweight clip-on design, intelligent noise cancellation, and plug-and-play operation make professional recording effortless wherever you go.",
+
+  features: [
+    "Apple Lightning receiver",
+    "Plug-and-play operation",
+    "AI noise reduction",
+    "Ultra-low latency",
+    "Rechargeable transmitter",
+    "Long wireless range",
+    "LED charging indicator",
+    "Portable clip-on design",
+    "Crystal-clear voice pickup",
+    "Ideal for iPhone creators"
+  ],
+
+  specifications: {
+    material: "ABS Plastic",
+    weight: "20 g",
+    dimensions: "58 × 20 × 10 mm",
+    connectivity: "Apple Lightning",
+    battery: "Rechargeable Lithium Battery",
+    usageTime: "Up to 8 Hours",
+    type: "Wireless Lavalier Microphone",
+    warranty: "6 Months"
+  },
+
+  colors: [
+    "Black",
+    "White"
+  ],
+
+  sizes: [
+    "Single Mic",
+    "Dual Mic"
+  ],
+
+  stock: 124,
+
+  rating: 4.8,
+
+  reviews: 913,
+
+  badge: "Trending",
+
+  featured: true,
+
+  newArrival: true,
 
   bestSeller: true
 },

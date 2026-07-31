@@ -652,11 +652,10 @@ stock: 18,
 
   comparePrice: 999,
 
-  image: "/products/tech/PartyBox Portable-1.JPG",
+  image: "/images/products/tech/PartyBox Portable-1.JPG",
 
   images: [
-    "/products/tech/PartyBox Portable-1.JPG",
-    "/products/tech/PartyBox Portable-1.JPG"
+    "/images/products/tech/PartyBox Portable-1.JPG",
   ],
 
   description:
@@ -1713,14 +1712,13 @@ stock: 18,
 
   comparePrice: 89,
 
-  image: "/images/products/tech/Monitor Light-2.JPG",
+  image: "/images/products/tech/Monitor Light Bar-6.JPG",
 
   images: [
-    "/images/products/tech/Monitor Light-1.JPG",
-    "/images/products/tech/Monitor Light-3.JPG",
-    "/images/products/tech/Monitor Light-4.JPG",
-    "/images/products/tech/Monitor Light-5.JPG",
-    "/images/products/tech/Monitor Light-6.JPG"
+    "/images/products/tech/Monitor Light Bar-2.JPG",
+    "/images/products/tech/Monitor Light Bar-1.JPG",
+    "/images/products/tech/Monitor Light Bar-3.JPG",
+    "/images/products/tech/Monitor Light Bar-5.JPG",
   ],
 
   description:
@@ -1772,183 +1770,6 @@ stock: 18,
 
   bestSeller: true
 },
-
-{
-  id: 32,
-
-  slug: "k9-wireless-lavalier-microphone",
-
-  name: "K9 Wireless Lavalier Microphone",
-
-  category: "Tech",
-
-  brand: "K9",
-
-  collection: "Content Creator Essentials",
-
-  tags: [
-    "Microphone",
-    "Wireless Mic",
-    "Lavalier",
-    "TikTok",
-    "YouTube",
-    "Podcast",
-    "Livestream",
-    "Interview",
-    "Recording",
-    "Creator"
-  ],
-
-  price: 19,
-
-  comparePrice: 29,
-
-  image: "/images/products/tech/Wireless Lavalier-1.JPG",
-
-  images: [
-    "/images/products/tech/Wireless Lavalier-1.JPG"
-  ],
-
-  description:
-    "Capture crystal-clear audio anywhere with the K9 Wireless Lavalier Microphone. Designed for content creators, vloggers, interviewers, educators, and livestreamers, this compact plug-and-play microphone delivers reliable wireless performance, intelligent noise reduction, and low-latency audio transmission for professional-quality recordings.",
-
-  features: [
-    "Plug-and-play setup",
-    "Intelligent noise reduction",
-    "2.4GHz wireless transmission",
-    "Omnidirectional microphone",
-    "Low latency recording",
-    "Long wireless range",
-    "Compact clip-on design",
-    "Rechargeable transmitter",
-    "Ideal for smartphones",
-    "Perfect for livestreaming and video recording"
-  ],
-
-  specifications: {
-    material: "ABS Plastic",
-    weight: "30 g",
-    dimensions: "60 × 20 × 10 mm",
-    connectivity: "Lightning or USB-C (Model Dependent)",
-    battery: "Rechargeable Lithium Battery",
-    usageTime: "Up to 6 Hours",
-    type: "Wireless Lavalier Microphone",
-    warranty: "6 Months"
-  },
-
-  colors: [
-    "Black",
-    "White"
-  ],
-
-  sizes: [
-    "Single Mic",
-    "Dual Mic Kit"
-  ],
-
-  stock: 165,
-
-  rating: 4.7,
-
-  reviews: 1486,
-
-  badge: "Best Value",
-
-  featured: true,
-
-  newArrival: true,
-
-  bestSeller: true
-},
-
-{
-  id: 33,
-
-  slug: "mini-wireless-lightning-lavalier-microphone",
-
-  name: "Mini Wireless Lightning Lavalier Microphone",
-
-  category: "Tech",
-
-  brand: "Generic",
-
-  collection: "Mobile Creator",
-
-  tags: [
-    "Wireless Microphone",
-    "Lightning",
-    "iPhone",
-    "Creator",
-    "Vlogging",
-    "Podcast",
-    "Recording",
-    "TikTok",
-    "YouTube",
-    "Interview"
-  ],
-
-  price: 24,
-
-  comparePrice: 39,
-
-  image: "/images/products/tech/Lavalier Microphone-1.JPG",
-
-  images: [
-    "/images/products/tech/Lavalier Microphone-1.JPG",
-  ],
-
-  description:
-    "Designed specifically for iPhone users, this ultra-compact wireless lavalier microphone provides exceptional voice clarity for vlogs, interviews, livestreams, podcasts, and social media content. Its lightweight clip-on design, intelligent noise cancellation, and plug-and-play operation make professional recording effortless wherever you go.",
-
-  features: [
-    "Apple Lightning receiver",
-    "Plug-and-play operation",
-    "AI noise reduction",
-    "Ultra-low latency",
-    "Rechargeable transmitter",
-    "Long wireless range",
-    "LED charging indicator",
-    "Portable clip-on design",
-    "Crystal-clear voice pickup",
-    "Ideal for iPhone creators"
-  ],
-
-  specifications: {
-    material: "ABS Plastic",
-    weight: "20 g",
-    dimensions: "58 × 20 × 10 mm",
-    connectivity: "Apple Lightning",
-    battery: "Rechargeable Lithium Battery",
-    usageTime: "Up to 8 Hours",
-    type: "Wireless Lavalier Microphone",
-    warranty: "6 Months"
-  },
-
-  colors: [
-    "Black",
-    "White"
-  ],
-
-  sizes: [
-    "Single Mic",
-    "Dual Mic"
-  ],
-
-  stock: 124,
-
-  rating: 4.8,
-
-  reviews: 913,
-
-  badge: "Trending",
-
-  featured: true,
-
-  newArrival: true,
-
-  bestSeller: true
-},
-
 
 
 ];
