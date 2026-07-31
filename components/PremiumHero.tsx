@@ -24,13 +24,13 @@ const trustBadges = [
 const heroProductIds = {
   featured: 1,
   floating: [
-  { id: 7, position: "top-0 right-0 lg:-top-4 lg:-right-6 lg:-right-10", size: "w-28 lg:w-32" },
-  { id: 24, position: "bottom-0 left-0 lg:-bottom-2 lg:-left-6 lg:-left-10", size: "w-28 lg:w-32" },
-  { id: 18, position: "bottom-0 right-0 lg:-bottom-8 lg:-right-2 lg:-right-6", size: "w-28 lg:w-32" },
+  { id: 56, position: "top-0 right-0 lg:-top-4 lg:-right-6 lg:-right-10", size: "w-28 lg:w-32" },
+  { id: 39, position: "bottom-0 left-0 lg:-bottom-2 lg:-left-6 lg:-left-10", size: "w-28 lg:w-32" },
+  { id: 13, position: "bottom-0 right-0 lg:-bottom-8 lg:-right-2 lg:-right-6", size: "w-28 lg:w-32" },
 ],
 };
 
-const spotlightIds = [12, 50, 9, 33, 13, 14, 10, 1, 7, 3, 21, 55, 32, 4, 8, 35, 40];
+const spotlightIds = [12, 50, 9, 3, 47, 56, 10, 33, 16, 21, 28, 6, 30, 13, 14, 10, 1, 7, 3, 31, 55, 32, 4, 8, 6, 36, 35, 38, 40];
 
 const featuredProduct = products.find((p) => p.id === heroProductIds.featured);
 const heroProduct = featuredProduct ?? products[0];
