@@ -15,19 +15,57 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+  ),
+
   title: {
     default: "NovaCommerce — Premium Fashion, Tech, Productivity & Wellness",
     template: "%s | NovaCommerce",
   },
+
   description:
-    "Discover premium, thoughtfully curated products for modern living across fashion, tech, productivity, and wellness. Free worldwide shipping, secure checkout, 30-day returns.",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+    "Discover premium, thoughtfully curated products for modern living across fashion, technology, productivity and wellness.",
+
   openGraph: {
     title: "NovaCommerce — Premium Products for Modern Living",
+
     description:
-      "Discover premium, thoughtfully curated products across fashion, tech, productivity, and wellness.",
+      "Discover premium, thoughtfully curated products across fashion, technology, productivity and wellness.",
+
+    url: "/",
+
     siteName: "NovaCommerce",
+
+    images: [
+      {
+        url: "/nova-og.png",
+        width: 1200,
+        height: 630,
+        alt: "NovaCommerce",
+      },
+    ],
+
+    locale: "en_US",
+
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "NovaCommerce",
+
+    description:
+      "Premium Fashion • Technology • Productivity • Wellness",
+
+    images: ["/nova-og.png"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
   },
 };
 
