@@ -5,6 +5,8 @@ import { useCart } from "@/context/CartContext";
 import CartItem from "./CartItem";
 import { useState } from "react";
 import FocusTrap from "focus-trap-react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 type CartDrawerProps = {
   open: boolean;
@@ -19,6 +21,8 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
   const progress = Math.min((subtotal / FREE_SHIPPING_THRESHOLD) * 100, 100);
 
   const [checkingOut, setCheckingOut] = useState(false);
+  const { data: session } = useSession();
+const router = useRouter();
 
 const handleCheckout = async () => {
   setCheckingOut(true);
@@ -159,28 +163,40 @@ const handleCheckout = async () => {
                 </div>
 
                 <button
-  onClick={handleCheckout}
+  onClick={() => {
+    if (!session) {
+      router.push("/sign-in");
+      return;
+    }
+
+    handleCheckout();
+  }}
   disabled={checkingOut}
   className="group relative w-full cursor-pointer overflow-hidden rounded-2xl bg-slate-900 py-4 font-semibold text-white shadow-lg transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 dark:bg-white dark:text-slate-900"
 >
   <span className="relative flex items-center justify-center gap-2">
     {checkingOut ? "Redirecting..." : "Secure Checkout"}
-    {!checkingOut && <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>}
+    {!checkingOut && (
+      <span className="transition-transform duration-300 group-hover:translate-x-1">
+        →
+      </span>
+    )}
   </span>
 </button>
 
-                                <button
-                  onClick={onClose}
-                  className="mt-3 w-full cursor-pointer rounded-2xl border border-slate-200 py-3.5 font-medium text-slate-700 transition hover:bg-slate-100 dark:border-white/10 dark:text-slate-300 dark:hover:bg-white/10"
-                >
-                  Continue Shopping
-                </button>
-              </div>
-            )}
-          </motion.aside>
-        </FocusTrap>
-      </>
-    )}
-  </AnimatePresence>
+<button
+  onClick={onClose}
+  className="mt-3 w-full cursor-pointer rounded-2xl border border-slate-200 py-3.5 font-medium text-slate-700 transition hover:bg-slate-100 dark:border-white/10 dark:text-slate-300 dark:hover:bg-white/10"
+>
+  Continue Shopping
+</button>
+
+</div>
+)}
+</motion.aside>
+</FocusTrap>
+</>
+)}
+</AnimatePresence>
 );
 }
