@@ -244,10 +244,13 @@ export default function PremiumHero() {
             </div>
 
             {floatingProducts.map((product) => (
-              <div key={product.id} className={`absolute z-10 ${product.position} ${product.size}`}>
-                <FloatingCard product={product} />
-              </div>
-            ))}
+  <div
+    key={product.id}
+    className={`absolute z-10 hidden sm:block ${product.position} ${product.size}`}
+  >
+    <FloatingCard product={product} />
+  </div>
+))}
           </motion.div>
         </motion.div>
       </Container>
